@@ -14,9 +14,9 @@ int main()
 	int b_copy = 0;
 	std::string result;
 
-	std::cout << "Ââåäèòå ïåðâîå ÷èñëî:" << std::endl;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿ÐµÑ€Ð²Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾:" << std::endl;
 	std::cin >> a;
-	std::cout << "Ââåäèòå âòîðîå ÷èñëî" << std::endl;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ñ‚Ð¾Ñ€Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾" << std::endl;
 	std::cin >> b;
 
 	a_copy = a;
@@ -24,248 +24,248 @@ int main()
 
 	if ((a >= 100) || (a <= (-100)) || (b >= 100) || (b <= (-100)))
 	{
-		std::cout << "Îøèáêà! Îäíî èç ÷èñåë âíå äèàïàçîíà!" << std::endl;
+		std::cout << "ÐžÑˆÐ¸Ð±ÐºÐ°! ÐžÐ´Ð½Ð¾ Ð¸Ð· Ñ‡Ð¸ÑÐµÐ» Ð²Ð½Ðµ Ð´Ð¸Ð°Ð¿Ð°Ð·Ð¾Ð½Ð°!" << std::endl;
 	}
 	else
 	{
 		if (a < 0)
 		{
-			result.append("ìèíóñ ");
+			result.append("Ð¼Ð¸Ð½ÑƒÑ ");
 			a *= -1;
 		}
 		if (a / 10 == 1)
 		{
 			if (a % 10 == 0)
 			{
-				result.append("äåñÿòü ");
+				result.append("Ð´ÐµÑÑÑ‚ÑŒ ");
 			}
 			if (a % 10 == 1)
 			{
-				result.append("îäèííàäöàòü ");
+				result.append("Ð¾Ð´Ð¸Ð½Ð½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ ");
 			}
 			if (a % 10 == 2)
 			{
-				result.append("äâåíàäöàòü ");
+				result.append("Ð´Ð²ÐµÐ½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ ");
 			}
 			if (a % 10 == 3)
 			{
-				result.append("òðèíàäöàòü ");
+				result.append("Ñ‚Ñ€Ð¸Ð½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ ");
 			}
 			if (a % 10 == 4)
 			{
-				result.append("÷åòûðíàäöàòü ");
+				result.append("Ñ‡ÐµÑ‚Ñ‹Ñ€Ð½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ ");
 			}
 			if (a % 10 == 5)
 			{
-				result.append("ïÿòíàäöàòü ");
+				result.append("Ð¿ÑÑ‚Ð½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ ");
 			}
 			if (a % 10 == 6)
 			{
-				result.append("øåñòíàäöàòü ");
+				result.append("ÑˆÐµÑÑ‚Ð½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ ");
 			}
 			if (a % 10 == 7)
 			{
-				result.append("ñåìíàäöàòü ");
+				result.append("ÑÐµÐ¼Ð½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ ");
 			}
 			if (a % 10 == 8)
 			{
-				result.append("âîñåìíàäöàòü ");
+				result.append("Ð²Ð¾ÑÐµÐ¼Ð½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ ");
 			}
 			if (a % 10 == 9)
 			{
-				result.append("äåâÿòíàäöàòü ");
+				result.append("Ð´ÐµÐ²ÑÑ‚Ð½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ ");
 			}
 		}
 		else
 		{
 			if (a / 10 == 2)
 			{
-				result.append("äâàäöàòü ");
+				result.append("Ð´Ð²Ð°Ð´Ñ†Ð°Ñ‚ÑŒ ");
 			}
 			if (a / 10 == 3)
 			{
-				result.append("òðèäöàòü ");
+				result.append("Ñ‚Ñ€Ð¸Ð´Ñ†Ð°Ñ‚ÑŒ ");
 			}
 			if (a / 10 == 4)
 			{
-				result.append("ñîðîê ");
+				result.append("ÑÐ¾Ñ€Ð¾Ðº ");
 			}
 			if (a / 10 == 5)
 			{
-				result.append("ïÿòüäåñÿò ");
+				result.append("Ð¿ÑÑ‚ÑŒÐ´ÐµÑÑÑ‚ ");
 			}
 			if (a / 10 == 6)
 			{
-				result.append("øåñòüäåñÿò ");
+				result.append("ÑˆÐµÑÑ‚ÑŒÐ´ÐµÑÑÑ‚ ");
 			}
 			if (a / 10 == 7)
 			{
-				result.append("ñåìäåñÿò ");
+				result.append("ÑÐµÐ¼Ð´ÐµÑÑÑ‚ ");
 			}
 			if (a / 10 == 8)
 			{
-				result.append("âîñåìäåñÿò ");
+				result.append("Ð²Ð¾ÑÐµÐ¼Ð´ÐµÑÑÑ‚ ");
 			}
 			if (a / 10 == 9)
 			{
-				result.append("äåâÿíîñòî ");
+				result.append("Ð´ÐµÐ²ÑÐ½Ð¾ÑÑ‚Ð¾ ");
 			}
 			if (a % 10 == 1)
 			{
-				result.append("îäèí ");
+				result.append("Ð¾Ð´Ð¸Ð½ ");
 			}
 			if (a % 10 == 2)
 			{
-				result.append("äâà ");
+				result.append("Ð´Ð²Ð° ");
 			}
 			if (a % 10 == 3)
 			{
-				result.append("òðè ");
+				result.append("Ñ‚Ñ€Ð¸ ");
 			}
 			if (a % 10 == 4)
 			{
-				result.append("÷åòûðå ");
+				result.append("Ñ‡ÐµÑ‚Ñ‹Ñ€Ðµ ");
 			}
 			if (a % 10 == 5)
 			{
-				result.append("ïÿòü ");
+				result.append("Ð¿ÑÑ‚ÑŒ ");
 			}
 			if (a % 10 == 6)
 			{
-				result.append("øåñòü ");
+				result.append("ÑˆÐµÑÑ‚ÑŒ ");
 			}
 			if (a % 10 == 7)
 			{
-				result.append("ñåìü ");
+				result.append("ÑÐµÐ¼ÑŒ ");
 			}
 			if (a % 10 == 8)
 			{
-				result.append("âîñåìü ");
+				result.append("Ð²Ð¾ÑÐµÐ¼ÑŒ ");
 			}
 			if (a % 10 == 9)
 			{
-				result.append("äåâÿòü ");
+				result.append("Ð´ÐµÐ²ÑÑ‚ÑŒ ");
 			}
 		}
-		a_copy > b_copy ? result.append("áîëüøå ÷åì ")
-			: (a_copy == b_copy ? result.append("ðàâíî ") : result.append("ìåíüøå ÷åì "));
+		a_copy > b_copy ? result.append("Ð±Ð¾Ð»ÑŒÑˆÐµ Ñ‡ÐµÐ¼ ")
+			: (a_copy == b_copy ? result.append("Ñ€Ð°Ð²Ð½Ð¾ ") : result.append("Ð¼ÐµÐ½ÑŒÑˆÐµ Ñ‡ÐµÐ¼ "));
 		if (b < 0)
 		{
-			result.append("ìèíóñ ");
+			result.append("Ð¼Ð¸Ð½ÑƒÑ ");
 			b *= -1;
 		}
 		if (b / 10 == 1)
 		{
 			if (b % 10 == 0)
 			{
-				result.append("äåñÿòü ");
+				result.append("Ð´ÐµÑÑÑ‚ÑŒ ");
 			}
 			if (b % 10 == 1)
 			{
-				result.append("îäèííàäöàòü ");
+				result.append("Ð¾Ð´Ð¸Ð½Ð½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ ");
 			}
 			if (b % 10 == 2)
 			{
-				result.append("äâåíàäöàòü ");
+				result.append("Ð´Ð²ÐµÐ½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ ");
 			}
 			if (b % 10 == 3)
 			{
-				result.append("òðèíàäöàòü ");
+				result.append("Ñ‚Ñ€Ð¸Ð½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ ");
 			}
 			if (b % 10 == 4)
 			{
-				result.append("÷åòûðíàäöàòü ");
+				result.append("Ñ‡ÐµÑ‚Ñ‹Ñ€Ð½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ ");
 			}
 			if (b % 10 == 5)
 			{
-				result.append("ïÿòíàäöàòü ");
+				result.append("Ð¿ÑÑ‚Ð½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ ");
 			}
 			if (b % 10 == 6)
 			{
-				result.append("øåñòíàäöàòü ");
+				result.append("ÑˆÐµÑÑ‚Ð½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ ");
 			}
 			if (b % 10 == 7)
 			{
-				result.append("ñåìíàäöàòü ");
+				result.append("ÑÐµÐ¼Ð½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ ");
 			}
 			if (b % 10 == 8)
 			{
-				result.append("âîñåìíàäöàòü ");
+				result.append("Ð²Ð¾ÑÐµÐ¼Ð½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ ");
 			}
 			if (b % 10 == 9)
 			{
-				result.append("äåâÿòíàäöàòü ");
+				result.append("Ð´ÐµÐ²ÑÑ‚Ð½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ ");
 			}
 		}
 		else
 		{
 			if (b / 10 == 2)
 			{
-				result.append("äâàäöàòü ");
+				result.append("Ð´Ð²Ð°Ð´Ñ†Ð°Ñ‚ÑŒ ");
 			}
 			if (b / 10 == 3)
 			{
-				result.append("òðèäöàòü ");
+				result.append("Ñ‚Ñ€Ð¸Ð´Ñ†Ð°Ñ‚ÑŒ ");
 			}
 			if (b / 10 == 4)
 			{
-				result.append("ñîðîê ");
+				result.append("ÑÐ¾Ñ€Ð¾Ðº ");
 			}
 			if (b / 10 == 5)
 			{
-				result.append("ïÿòüäåñÿò ");
+				result.append("Ð¿ÑÑ‚ÑŒÐ´ÐµÑÑÑ‚ ");
 			}
 			if (b / 10 == 6)
 			{
-				result.append("øåñòüäåñÿò ");
+				result.append("ÑˆÐµÑÑ‚ÑŒÐ´ÐµÑÑÑ‚ ");
 			}
 			if (b / 10 == 7)
 			{
-				result.append("ñåìäåñÿò ");
+				result.append("ÑÐµÐ¼Ð´ÐµÑÑÑ‚ ");
 			}
 			if (b / 10 == 8)
 			{
-				result.append("âîñåìäåñÿò ");
+				result.append("Ð²Ð¾ÑÐµÐ¼Ð´ÐµÑÑÑ‚ ");
 			}
 			if (b / 10 == 9)
 			{
-				result.append("äåâÿíîñòî ");
+				result.append("Ð´ÐµÐ²ÑÐ½Ð¾ÑÑ‚Ð¾ ");
 			}
 			if (b % 10 == 1)
 			{
-				result.append("îäèí ");
+				result.append("Ð¾Ð´Ð¸Ð½ ");
 			}
 			if (b % 10 == 2)
 			{
-				result.append("äâà ");
+				result.append("Ð´Ð²Ð° ");
 			}
 			if (b % 10 == 3)
 			{
-				result.append("òðè ");
+				result.append("Ñ‚Ñ€Ð¸ ");
 			}
 			if (b % 10 == 4)
 			{
-				result.append("÷åòûðå ");
+				result.append("Ñ‡ÐµÑ‚Ñ‹Ñ€Ðµ ");
 			}
 			if (b % 10 == 5)
 			{
-				result.append("ïÿòü ");
+				result.append("Ð¿ÑÑ‚ÑŒ ");
 			}
 			if (b % 10 == 6)
 			{
-				result.append("øåñòü ");
+				result.append("ÑˆÐµÑÑ‚ÑŒ ");
 			}
 			if (b % 10 == 7)
 			{
-				result.append("ñåìü ");
+				result.append("ÑÐµÐ¼ÑŒ ");
 			}
 			if (b % 10 == 8)
 			{
-				result.append("âîñåìü ");
+				result.append("Ð²Ð¾ÑÐµÐ¼ÑŒ ");
 			}
 			if (b % 10 == 9)
 			{
-				result.append("äåâÿòü ");
+				result.append("Ð´ÐµÐ²ÑÑ‚ÑŒ ");
 			}
 		}
 	}

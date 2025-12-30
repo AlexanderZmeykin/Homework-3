@@ -4,11 +4,11 @@ int main()
 {
 	setlocale(LC_ALL, "rus");
 	int a, b, c;
-	std::cout << "Ïåğâîå ÷èñëî:" << std::endl;
+	std::cout << "ĞŸĞµÑ€Ğ²Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾:" << std::endl;
 	std::cin >> a;
-	std::cout << "Âòîğîå ÷èñëî:" << std::endl;
+	std::cout << "Ğ’Ñ‚Ğ¾Ñ€Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾:" << std::endl;
 	std::cin >> b;
-	std::cout << "Òğåòüå ÷èñëî:" << std::endl;
+	std::cout << "Ğ¢Ñ€ĞµÑ‚ÑŒĞµ Ñ‡Ğ¸ÑĞ»Ğ¾:" << std::endl;
 	std::cin >> c;
 	int result_1 = a > b ? 
 		(a > c ? a : c) 
@@ -23,5 +23,5 @@ int main()
 		: (result_1 == b ? 
 			(result_2 == a ? c : a) 
 			: (result_2 == a ? b : a));
-	std::cout << "Ğåçóëüòàò:" << result_1 << result_2 << result_3 << std::endl;
+	std::cout << "Ğ ĞµĞ·ÑƒĞ»ÑŒÑ‚Ğ°Ñ‚:" << result_1 << result_2 << result_3 << std::endl;
 }
